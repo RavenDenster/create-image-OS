@@ -27,6 +27,7 @@ RUN sudo chown -R $USERNAME:$USERNAME /home/$USERNAME/poky
 WORKDIR /home/$USERNAME/poky
 
 COPY ./entry.sh ./entry.sh
+
 ENV TERM=xterm
 
 ENTRYPOINT ["bash", "entry.sh"]
